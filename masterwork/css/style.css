@@ -84,3 +84,43 @@ body {
   margin-top: 16px;
   top: 16px;
 }
+
+
+.list_heading_toggle li.collapsed span::before,
+.list_heading_toggle li.collapsed span::after {
+  content: "";
+  position: absolute;
+  background-color: #2c3038;
+  height: 9px;
+  width: 3px;
+  right: 25px;
+  top: 32px;
+  transition: all ease-in-out 0.25s;
+}
+
+.list_heading_toggle li.collapsed span::before {
+  transform: translate(5px) rotate(45deg);
+}
+.list_heading_toggle li.collapsed span::after {
+  transform: rotate(-45deg);
+}
+
+
+.list_heading_toggle li span::before,
+.list_heading_toggle li span::after {
+  content: "";
+  position: absolute;
+  background-color: #2c3038;
+  height: 9px;
+  width: 3px;
+  right: 25px;
+  top: 32px;
+  transition: all ease-in-out 0.25s;
+}
+
+.list_heading_toggle li span::before {
+  transform: rotate(45deg);
+}
+.list_heading_toggle li span::after {
+  transform: translate(5px) rotate(-45deg);
+}
